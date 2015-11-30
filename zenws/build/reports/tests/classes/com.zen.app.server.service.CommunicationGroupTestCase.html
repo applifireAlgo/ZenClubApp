@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.zen.app.server.service.CommunicationGroupTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.zen.app.server.service.CommunicationGroupTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.zen.app.server.service.html">com.zen.app.server.service</a> &gt; CommunicationGroupTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.197s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.138s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.080s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>1.974s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:10:03.693--ClientSession(1151224742)--Connection(678951391)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationGroup_M (commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A095234E-9E2A-47B5-BA26-F231424621F5, lEXKTCPshr6YoE7rJbKZF9G3gFAEY68KZzFLiSfjW9WmMRKx5a, 5XR0ogSzGDDJCMAMlxWemDuIIf0DuEvB2bkbuB5uyC3TdVbism, 1, AAAAA, 2015-11-30 10:40:03.686, null, 2015-11-30 10:40:03.686, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:10:03.816--ClientSession(1329434079)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationGroup_M WHERE ((activeStatus = ?) AND (commGroupId = ?))
+	bind =&gt; [1, A095234E-9E2A-47B5-BA26-F231424621F5]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:10:03.818--ClientSession(391524803)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationGroup_M WHERE (commGroupId = ?)
+	bind =&gt; [A095234E-9E2A-47B5-BA26-F231424621F5]
+[EL Fine]: sql: 2015-11-30 05:10:03.82--ClientSession(391524803)--Connection(678951391)--Thread(Thread[Test worker,5,main])--UPDATE ast_CommunicationGroup_M SET commGroupDescription = ?, commGroupName = ?, updatedBy = ?, versionId = ? WHERE ((commGroupId = ?) AND (versionId = ?))
+	bind =&gt; [8JWeW8hDK2TxtPLw7EVaLb6837XTIxIsa3VhDsj6XxAO9enNOr, NwV9MJFR4yglT26C3IwdaL5GWwX8Gdnd5JKki9pGTHqhLYmUT3, AAAAA, 2, A095234E-9E2A-47B5-BA26-F231424621F5, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:10:03.895--ClientSession(825521971)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationGroup_M WHERE ((activeStatus = ?) AND (commGroupId = ?))
+	bind =&gt; [1, A095234E-9E2A-47B5-BA26-F231424621F5]
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:10:03.909--ClientSession(1770084490)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationGroup_M WHERE (commGroupId = ?)
+	bind =&gt; [A095234E-9E2A-47B5-BA26-F231424621F5]
+[EL Fine]: sql: 2015-11-30 05:10:03.911--ClientSession(1770084490)--Connection(678951391)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationGroup_M WHERE ((commGroupId = ?) AND (versionId = ?))
+	bind =&gt; [A095234E-9E2A-47B5-BA26-F231424621F5, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Nov 30, 2015 5:10:19 AM</p>
+</div>
+</div>
+</body>
+</html>

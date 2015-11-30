@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON zenwsdb.* TO 'zenwsdb'@'%' IDENTIFIED BY 'zenwsdb' WITH GRANT OPTION

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.zen.app.server.service.AppMenusTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.zen.app.server.service.AppMenusTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.zen.app.server.service.html">com.zen.app.server.service</a> &gt; AppMenusTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.269s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.089s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.086s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.079s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:09:58.706--ClientSession(1313315523)--Connection(678951391)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AppMenus_M (menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [08B8BF94-BB60-4079-B33B-EDB39706FA00, zuPkXMbX9X1xqAFfrfdsFaxGN2b1wc6Ltqes17tGxz8pgi2juD, 2, 5, ndmHMrO8akGChJrh2P3Q8HX0oSg4TLy84XAa1QBBBCuPlh5drg, FxobjolNhGdMFnSKm4MNmk8WISckgDpKy3FTZfntEgv8LUmUHv, true, true, ULHamwNheUKev2pewrjSJ4qH0JgxnZqevY02YOF185oNQ6pC0P, 9suVSTBdqvTj8RrmwEiotMFRgHIdErNzs9wvD0dsJ0k58XXMiN, 8pbETP4mOcn99ZtTHf2wqrHev2pmiU2KfUYhS14HQJdPnsKO3p, 2t3rCSndgrco5XeqFvxfftznhzROUv8VEr4jsIMouhrOkLdzpP, d8B, 1, AAAAA, 2015-11-30 10:39:58.698, null, 2015-11-30 10:39:58.698, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:09:58.784--ClientSession(1927474245)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind =&gt; [1, 08B8BF94-BB60-4079-B33B-EDB39706FA00]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:09:58.787--ClientSession(570582881)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind =&gt; [08B8BF94-BB60-4079-B33B-EDB39706FA00]
+[EL Fine]: sql: 2015-11-30 05:09:58.788--ClientSession(570582881)--Connection(678951391)--Thread(Thread[Test worker,5,main])--UPDATE ast_AppMenus_M SET appId = ?, menuAccessRights = ?, menuAction = ?, menuCommands = ?, menuIcon = ?, menuLabel = ?, menuTreeId = ?, RefObjectId = ?, uiType = ?, updatedBy = ?, versionId = ? WHERE ((menuId = ?) AND (versionId = ?))
+	bind =&gt; [lWxkLyt5f8dXHflYzHaX8eizKckWtUK3exHvXMcw04qqRl1Pxs, 6, GQmTHfGGqmbORRCfCyjflDWKwFJvPR90XtsR0iFgtWXHCxGqTr, NClP8NPdmlSJ0GhLHdTi3IaL1GrM0Crz6dmsomiI7dZUkASezq, wnrDwUweU2AMuDK7w4b5ItqEB6ot8BLBz4NUZ0mjKw0B09f50H, UpaK6YCGKTa5Xd6B4FAdzLBCQ6f3zdeFbThCDVQMw4AjYjqXnU, wj9YXdbD0YO7649Z1AhER6mTQnsg3clgABorcjBSLdbRKyjljX, byKISX7HQhXvlCu5cNR8fW6JWeyjKswEDJVGRAw4xIh6hagcW6, RQU, AAAAA, 2, 08B8BF94-BB60-4079-B33B-EDB39706FA00, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:09:58.876--ClientSession(318189284)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind =&gt; [1, 08B8BF94-BB60-4079-B33B-EDB39706FA00]
+In around repository aspect
+[EL Fine]: sql: 2015-11-30 05:09:58.891--ClientSession(204229603)--Connection(678951391)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind =&gt; [08B8BF94-BB60-4079-B33B-EDB39706FA00]
+[EL Fine]: sql: 2015-11-30 05:09:58.895--ClientSession(204229603)--Connection(678951391)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AppMenus_M WHERE ((menuId = ?) AND (versionId = ?))
+	bind =&gt; [08B8BF94-BB60-4079-B33B-EDB39706FA00, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Nov 30, 2015 5:10:19 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+Ext.define('Zenws.zenws.shared.com.zen.model.app.ClubMembersModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "clubMemId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "clubid",
+          "reference": "Club",
+          "defaultValue": ""
+     }, {
+          "name": "contactid",
+          "reference": "CoreContacts",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
